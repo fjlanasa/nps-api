@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/park/:parkCode', (req, res) => {
-  models.Park.findOne({ where: { parkCode: req.params.parkCode }).then((park) => {
+  models.Park.findOne({ where: { parkCode: req.params.parkCode }} ).then((park) => {
     res.send(park);
   })
   .catch((err) => {
