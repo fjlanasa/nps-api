@@ -61,8 +61,7 @@ async function compileParks() {
       createdAt: Date.now(),
       updatedAt: Date.now()
     });
-
-    console.log(compileParks[compiledParks.length - 1]);
+    console.log(compiledParks[compiledParks.length - 1]);
   }
 
   return compiledParks.filter((park) => park.image !== null);
