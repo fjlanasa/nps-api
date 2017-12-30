@@ -4,6 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     image: DataTypes.STRING,
     images: DataTypes.ARRAY(DataTypes.STRING),
+    thumbnail: DataTypes.STRING,
+    thumbnails: DataTypes.ARRAY(DataTypes.STRING),
     parkCode: DataTypes.STRING,
     description: DataTypes.TEXT,
     lat: DataTypes.STRING,

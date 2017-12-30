@@ -17,6 +17,12 @@ module.exports = {
       images: {
         type: Sequelize.ARRAY(Sequelize.STRING)
       },
+      thumbnail: {
+        type: Sequelize.STRING
+      },
+      thumbnails: {
+        type: Sequelize.ARRAY(Sequelize.STRING)
+      },
       parkCode: {
         type: Sequelize.STRING
       },
